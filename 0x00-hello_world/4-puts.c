@@ -3,7 +3,7 @@
 /**
  * main - print a constant string to the terminal
 * Description: Print text to the terminal
-* Return: Int 0 
+* Return: Int 0
 */
 int main(void)
 {
