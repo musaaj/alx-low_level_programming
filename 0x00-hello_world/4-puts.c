@@ -5,7 +5,6 @@
 * Description: Print text to the terminal
 * Return: Int 0 
 */
-
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
