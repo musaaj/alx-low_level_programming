@@ -15,13 +15,16 @@ int main(void)
 	char last_digit;
 	char n_to_string[20];
 	int len;
+	char minus;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	sprintf(n_to_string, "%d", n);
 	len = strlen(n_to_string);
 	last_digit = n_to_string[len - 1];
-	printf("Last digit of %d is %c ", n, last_digit);
+	if (n < 0)
+		minus = '-';
+	printf("Last digit of %d is %c%c ", n, minus, last_digit);
 	if (atoi(&last_digit) > 5)
 		printf("and is greater than 5");
 	if ((atoi(&last_digit) < 6) & (n != 0))
