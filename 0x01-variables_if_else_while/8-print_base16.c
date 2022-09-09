@@ -12,7 +12,7 @@ int main(void)
 
 	for (letter = 48; letter < 103; letter++)
 	{
-		if (letter > 57 & letter < 97)
+		if ((letter > 57) & (letter < 97))
 			continue;
 		putchar(letter);
 	}
