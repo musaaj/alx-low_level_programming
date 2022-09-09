@@ -8,9 +8,7 @@
 
 int main(void)
 {
-	int letter = 97;
-
-	for (letter; letter < 123; letter++)
+	for (int letter = 97; letter < 123; letter++)
 	{
 		putchar(letter);
 	}
