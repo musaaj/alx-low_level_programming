@@ -10,7 +10,7 @@ int main(void)
 {
 	int letter;
 
-	for (letter = 0; letter < 10; letter++)
+	for (letter = 48; letter < 58; letter++)
 	{
 		putchar(letter);
 	}
