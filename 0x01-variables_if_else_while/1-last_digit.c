@@ -12,27 +12,28 @@
 int main(void)
 {
 	int n;
-	char last_digit;
+	char last_char;
+	int last_digit;
 	char n_to_string[20];
 	int len;
-	char minus;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	sprintf(n_to_string, "%d", n);
 	len = strlen(n_to_string);
-	last_digit = n_to_string[len - 1];
+	last_char = n_to_string[len - 1];
+	last_digit = atoi(&last_char);
 	if (n < 0)
 	{
-		minus = '-';
 		last_digit *= -1;
 	}
-	printf("Last digit of %d is %c%c ", n, minus, last_digit);
-	if (atoi(&last_digit) > 5)
+	
+	printf("Last digit of %d is %d ", n, last_digit);
+	if (last_digit  > 5)
 		printf("and is greater than 5");
-	if ((atoi(&last_digit) < 6) & (n != 0))
+	if ((last_digit < 6) & (last_digit != 0))
 		printf("and is less than 6 and not 0");
-	if (atoi(&last_digit) == 0)
+	if (last_digit == 0)
 		printf("and is 0");
 	printf("\n");
 	return (0);
