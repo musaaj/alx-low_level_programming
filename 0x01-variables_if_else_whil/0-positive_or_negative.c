@@ -20,5 +20,8 @@ int main(void)
 	if (n > 0)
 		print("%i is positive", n);
 
+	if (n == 0)
+		print("%i is zero", n);
+
 	return (0);
 }
