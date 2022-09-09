@@ -23,7 +23,10 @@ int main(void)
 	len = strlen(n_to_string);
 	last_digit = n_to_string[len - 1];
 	if (n < 0)
+	{
 		minus = '-';
+		last_digit *= -1;
+	}
 	printf("Last digit of %d is %c%c ", n, minus, last_digit);
 	if (atoi(&last_digit) > 5)
 		printf("and is greater than 5");
