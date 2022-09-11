@@ -1,5 +1,5 @@
-#include <stdio.h>
-
+#include <stdio.h>
+#include <string.h>
 /**
 * printchar - print a char twice
 * Return: void
