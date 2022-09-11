@@ -6,7 +6,7 @@
 * Return: void
 */
 
-void printchar(int d)
+void print_char(int d)
 {
 	int i;
 	for (i = 0; i < 2; i++)
@@ -36,7 +36,7 @@ int main(void)
  				if(b == num)
  				continue;
  				putchar(32);
- 				printchar(num);
+ 				print_char(num);
  				putchar(44);
  				putchar(32);
  				putchar(num);
@@ -45,7 +45,7 @@ int main(void)
  		}
  	}
  	putchar(32);
- 	printchar(57);
+ 	print_char(57);
         putchar(10);
         return (0);
 }
