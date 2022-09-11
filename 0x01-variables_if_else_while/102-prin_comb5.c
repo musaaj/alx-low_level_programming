@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+
 /**
 * printchar - print a char twice
 * Return: void
@@ -15,8 +16,7 @@ void printchar(int d)
 }
   
 /** 
-* main - prints alphabets 
-*in lower case 
+* main - prints alphabets in lower case 
 * Return: int 0 
 */ 
  
