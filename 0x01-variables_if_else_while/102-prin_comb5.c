@@ -5,12 +5,12 @@
 * Return: void
 */
 
-void printchar(int a)
+void printchar(int d)
 {
 	int i;
 	for (i = 0; i < 2; i++)
 	{
-		putchar(a);
+		putchar(d);
 	}
 }
   
