@@ -34,7 +34,7 @@ int main(void)
 		{
 			for (b = 48; b < 58; b++)
 			{
-				if (b == num)
+				if (i  == num)
 					continue;
 				print_char(num);
 				putchar(44);
