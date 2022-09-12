@@ -46,7 +46,6 @@ int main(void)
 			}
 		}
 	}
-	putchar(32);
 	print_char(57);
 	return (0);
 }
