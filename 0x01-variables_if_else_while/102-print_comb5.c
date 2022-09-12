@@ -32,7 +32,7 @@ int main(void)
 	{
 		for (i = 48; i < 58; i++)
 		{
-			for (b = 0; b < 100; b++)
+			for (b = 0; b < 10; b++)
 			{
 				if (i  == num)
 					continue;
