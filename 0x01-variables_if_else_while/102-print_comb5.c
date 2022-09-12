@@ -48,6 +48,5 @@ int main(void)
 	}
 	putchar(32);
 	print_char(57);
-	putchar(10);
 	return (0);
 }
