@@ -32,15 +32,15 @@ int main(void)
 	{
 		for (i = 48; i < 58; i++)
 		{
-			for (b = 0; b < 10; b++)
+			for (b = 48; b < 58; b++)
 			{
 				if (i  == num)
 					continue;
-				print_char(num);
-
-				putchar(32);
 				putchar(num);
 				putchar(i);
+				putchar(32);
+				putchar(i);
+				putchar(b);
 				putchar(44);
 				putchar(32);
 			}
