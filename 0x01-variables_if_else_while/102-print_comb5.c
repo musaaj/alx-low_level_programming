@@ -36,12 +36,12 @@ int main(void)
 			{
 				if (b == num)
 					continue;
-				putchar(32);
 				print_char(num);
 				putchar(44);
 				putchar(32);
 				putchar(num);
 				putchar(b);
+				putchar(32);
 			}
 		}
 	}
