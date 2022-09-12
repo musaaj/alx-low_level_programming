@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-/*
- * printchar - print a char twice
+/**
+ * print_char - print a char twice
  * Parameter: d int
  * Return: void
 */
