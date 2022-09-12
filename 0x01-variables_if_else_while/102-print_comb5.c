@@ -3,7 +3,7 @@
 
 /**
  * print_char - print a char twice
- * Parameter: d int
+ * @d: int ascii number for char
  * Return: void
 */
 
