@@ -9,12 +9,7 @@
 
 void print_char(int d)
 {
-	int i;
-
-	for (i = 0; i < 2; i++)
-	{
-		putchar(d);
-	}
+	putchar(d);
 }
 
 /**
@@ -34,8 +29,6 @@ int main(void)
 		{
 			for (b = 48; b < 58; b++)
 			{
-				if (i  == num)
-					continue;
 				putchar(num);
 				putchar(i);
 				putchar(32);
