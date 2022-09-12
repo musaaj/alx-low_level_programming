@@ -25,7 +25,6 @@ void print_char(int d)
 int main(void)
 {
 	int num;
-	int a;
 	int b;
 	int i;
 
