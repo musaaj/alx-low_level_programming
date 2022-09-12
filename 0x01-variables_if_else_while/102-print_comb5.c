@@ -37,10 +37,11 @@ int main(void)
 				if (i  == num)
 					continue;
 				print_char(num);
-				putchar(44);
+
 				putchar(32);
 				putchar(num);
 				putchar(i);
+				putchar(44)
 				putchar(32);
 			}
 		}
