@@ -15,7 +15,7 @@ int print_last_digit(int n)
 	{
 		mask = n >> (sizeof(int) * 8 - 1);
 		mask = (mask + n) ^ mask;
-		n = mask -1;
+		n = mask + 1;
 	}
 	ldigit = n % 10;
 	_putchar(ldigit + 48);
