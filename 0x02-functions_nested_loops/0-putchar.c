@@ -2,7 +2,7 @@
 
 /**
  * main - main entry
- * Return: int 
+ * Return: int
 */
 
 int main(void)
