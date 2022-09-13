@@ -2,6 +2,7 @@
 
 /**
  * _islower - check whether a given alphabet is lower case or not
+ * @a: int ascii table number
  * Return: int 1 if is lower otherwise 0
 */
 
