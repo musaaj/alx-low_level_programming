@@ -13,7 +13,7 @@ int print_last_digit(int n)
 
 	if (n < 0)
 	{
-		mask = n >> (sizeof(int) * 8 -1);
+		mask = n >> (sizeof(int) * 8 - 1);
 		mask = (mask + n) ^ mask;
 		n = mask;
 	}
