@@ -15,7 +15,8 @@ int main(void)
  * print_alphabet - print english letters
  * Return: void
 */
-void print_alphabet(void)
+
+print_alphabet(void)
 {
 	char i;
 
