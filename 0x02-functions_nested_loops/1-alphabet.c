@@ -2,7 +2,7 @@
 
 /**
  * main - print lowercase alphabet
- * Return: int 
+ * Return: int
 */
 
 int main(void)
@@ -11,6 +11,10 @@ int main(void)
 	return (0);
 }
 
+/**
+ * print_alphabet - print english letters
+ * Return: void
+*/
 void print_alphabet(void)
 {
 	char i;
