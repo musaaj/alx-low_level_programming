@@ -4,7 +4,7 @@ void jack_bauer(void)
 {
 	int h, m, hchar, mchar, z = 48;
 
-	while (h <= 23)
+	while ((h <= 23) && (m <= 59))
 	{
 		hchar = h % 10;
 		mchar = m % 10;
