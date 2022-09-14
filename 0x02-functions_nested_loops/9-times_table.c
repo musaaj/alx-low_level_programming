@@ -7,25 +7,28 @@
 
 void times_table(void)
 {
-	int i, j, k, l, z = 48;
+	int i, j, k, l, m, z = 48;
+	char num[3];
 
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
 		{
 			k = i * j;
-			l = k % 10;
-			k = k - l;
-			_putchar(l + z);
-			if (k > 0)
+
+			while (k > 0)
 			{
-			while (k >= 10)
+				l = k % 10;
+				num[m] = l;
+				k /= 10;
+
+			}
+
+			for (m = 2; m > 0; m--)
 			{
-				k = k / 10;
-				_putchar(k + z);
+				_putchar(num[m]);
 			}
-			}
-			_putchar(k + z);
+
 			_putchar(44);
 			_putchar(32);
 		}
