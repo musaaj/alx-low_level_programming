@@ -33,14 +33,14 @@ void times_table(void)
 				m++;
 
 			}
-
+			}
 			for (m = 2; m >= 0; m--)
 			{
 				n = num[m];
 				if (n != ',')
 					_putchar(n);
 			}
-			}
+			
 
 			_putchar(44);
 			_putchar(32);
