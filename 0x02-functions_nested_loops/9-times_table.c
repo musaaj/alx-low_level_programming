@@ -28,7 +28,7 @@ void times_table(void)
 			for (m = 2; m >= 0; m--)
 			{
 				if (num[m] != ',')
-					_putchar(num[m]);
+					//_putchar(num[m]);
 			}
 
 			_putchar(44);
@@ -36,4 +36,5 @@ void times_table(void)
 		}
 		_putchar(10);
 	}
+	
 }
