@@ -15,6 +15,7 @@ void times_table(void)
 		for (j = 0; j <= 9; j++)
 		{
 			k = i * j;
+			m = 0;
 
 			while (k > 0)
 			{
@@ -29,7 +30,8 @@ void times_table(void)
 			for (m = 2; m >= 0; m--)
 			{
 				n = num[m];
-				_putchar(n);
+				if (n != ',')
+					_putchar(n);
 			}
 
 			_putchar(44);
