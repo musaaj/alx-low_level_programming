@@ -17,12 +17,15 @@ void times_table(void)
 			l = k % 10;
 			k = k - l;
 			_putchar(l + z);
+			if (k > 0)
+			{
 			while (k >= 10)
 			{
 				k = k / 10;
 				_putchar(k + z);
 			}
 			_putchar(k + z);
+			}
 			_putchar(44);
 			_putchar(32);
 		}
