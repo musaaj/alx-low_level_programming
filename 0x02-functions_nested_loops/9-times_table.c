@@ -8,7 +8,7 @@
 void times_table(void)
 {
 	int i, j, k, l, m, z = 48;
-	char num[3];
+	char num[] [',', ',', ','];
 
 	for (i = 0; i <= 9; i++)
 	{
@@ -20,13 +20,15 @@ void times_table(void)
 			{
 				l = k % 10;
 				num[m] = l + z;
+				k -= l;
 				k /= 10;
 
 			}
 
 			for (m = 2; m > 0; m--)
 			{
-				_putchar(num[m]);
+				if (num[m] != ',')
+					_putchar(num[m]);
 			}
 
 			_putchar(44);
