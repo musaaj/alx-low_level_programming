@@ -17,7 +17,14 @@ void times_table(void)
 			k = i * j;
 			m = 0;
 
-			while (k >= 0)
+			if( k == 0) 
+			{
+				num[m] = 48;
+			}
+			else
+			{
+
+			while (k > 0)
 			{
 				l = k % 10;
 				num[m] = l + z;
@@ -32,6 +39,7 @@ void times_table(void)
 				n = num[m];
 				if (n != ',')
 					_putchar(n);
+			}
 			}
 
 			_putchar(44);
