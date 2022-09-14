@@ -1,12 +1,16 @@
 #include "main.h"
 
+/**
+ * jack_bauer - print in clock format
+ * Return: void
+*/
 void jack_bauer(void)
 {
 	int h, m, hchar, mchar, hchar1, mchar1, z = 48;
 
 	for (h = 0; h <= 23; h++)
 	{
-		for(m = 0; m <= 59; m++)
+		for (m = 0; m <= 59; m++)
 		{
 			hchar = h % 10;
 			mchar = m % 10;
