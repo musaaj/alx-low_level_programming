@@ -17,7 +17,7 @@ void times_table(void)
 			k = i * j;
 			m = 0;
 
-			while (k > 0)
+			while (k >= 0)
 			{
 				l = k % 10;
 				num[m] = l + z;
