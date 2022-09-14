@@ -1,6 +1,6 @@
 #include "main.h"
 
-void jack_bauer(void);
+void jack_bauer(void)
 {
 	int h, m, hchar, mchar, z = 48;
 
