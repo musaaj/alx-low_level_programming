@@ -8,7 +8,7 @@
 
 int print_last_digit(int n)
 {
-	int mask;
+	int ldigit;
 
 	if (n < 0)
 	{
