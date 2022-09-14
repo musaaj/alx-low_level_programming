@@ -25,7 +25,7 @@ void times_table(void)
 
 			}
 
-			for (m = 2; m > 0; m--)
+			for (m = 2; m >= 0; m--)
 			{
 				if (num[m] != ',')
 					_putchar(num[m]);
