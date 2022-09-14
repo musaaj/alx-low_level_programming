@@ -22,6 +22,7 @@ void times_table(void)
 				num[m] = l + z;
 				k -= l;
 				k /= 10;
+				m++
 
 			}
 
