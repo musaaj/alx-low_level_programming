@@ -17,7 +17,7 @@ void times_table(void)
 			k = i * j;
 			m = 0;
 
-			if( k == 0) 
+			if( k == 0)
 			{
 				num[m] = 48;
 			}
@@ -48,5 +48,5 @@ void times_table(void)
 		}
 		_putchar(10);
 	}
-	
+
 }
