@@ -19,7 +19,7 @@ void times_table(void)
 			while (k > 0)
 			{
 				l = k % 10;
-				num[m] = l;
+				num[m] = l + z;
 				k /= 10;
 
 			}
