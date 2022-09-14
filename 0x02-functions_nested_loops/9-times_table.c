@@ -8,7 +8,7 @@
 void times_table(void)
 {
 	int i, j, k, l, m, z = 48;
-	char num[] = [',', ',', ','];
+	char num[] = {',', ',', ','};
 
 	for (i = 0; i <= 9; i++)
 	{
