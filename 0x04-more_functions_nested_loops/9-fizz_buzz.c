@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * fizzbuzz - print fizzbuzz 
 */
@@ -12,20 +12,20 @@ void fizzbuzz(void)
 	{
 		if ((i % 3 == 0) && (i % 5 == 0))
 		{
-			printf("%c", "FizzBuzz");
+			printf("%s", "FizzBuzz");
 		}
 		else if ((i % 3 == 0) && (i % 5 != 0)) 
 		{
-			printf("%c", "Fizz");
+			printf("%s", "Fizz");
 		}
 		else if ((i % 3 != 0) && (i % 5 == 0))
 		{
-			printf("%c", "Buzz");
+			printf("%s", "Buzz");
 		}
 		else
 		{
 			printf("%d", i);
 		}
-		putchar(10);
+		putchar(32);
 	}
 }

@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "putchar.c"
-#include "8-print_square.c"
+#include "9-fizz_buzz.c"
 #include "main.h"
 
 int main(void)
 {
-	print_square(10);
+	fizzbuzz();
 	return (0);
 }
