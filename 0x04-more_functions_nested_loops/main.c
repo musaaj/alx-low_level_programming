@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "putchar.c"
-#include "3-print_numbers.c"
+#include "4-print_most_numbers.c"
 #include "main.h"
 
 int main(void)
 {
-	print_numbers();
+	print_most_numbers();
 	return (0);
 }
