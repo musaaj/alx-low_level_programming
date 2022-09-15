@@ -18,10 +18,10 @@ void print_square(int size)
 		i = j;
 		while (i > 0)
 		{
-			putchar('#');
+			_putchar('#');
 			i--;
 		}
-		putchar(10);
+		_putchar(10);
 		size--;
 	}
 }
