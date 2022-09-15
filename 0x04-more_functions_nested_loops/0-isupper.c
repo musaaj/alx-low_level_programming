@@ -1,5 +1,5 @@
 /**
- * main - check wether a given char is uppercase or not
+ * _isupper - check wether a given char is uppercase or not
  * @c: int ascii char code
  * Return: 1 if c is uppercase otherwise 
 */
