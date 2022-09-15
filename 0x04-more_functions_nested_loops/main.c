@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "putchar.c"
-#include "6-print_line.c"
+#include "7-print_diagonal.c"
 #include "main.h"
 
 int main(void)
 {
-	print_line(0);
+	print_diagonal(10);
 	return (0);
 }
