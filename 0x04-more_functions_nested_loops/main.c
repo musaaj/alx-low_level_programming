@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "putchar.c"
-#include "7-print_diagonal.c"
+#include "8-print_square.c"
 #include "main.h"
 
 int main(void)
 {
-	print_diagonal(2);
+	print_square(10);
 	return (0);
 }
