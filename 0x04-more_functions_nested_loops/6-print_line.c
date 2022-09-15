@@ -2,6 +2,7 @@
 
 /**
 * print_line - print horizontal line
+* @n: int length of line
 */
 
 void print_line(int n)
