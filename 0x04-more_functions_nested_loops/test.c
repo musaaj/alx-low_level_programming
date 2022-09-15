@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * print_numbers - print digits 0-9
  * Return: void
@@ -9,7 +10,13 @@ void print_numbers(void)
 
 	for (i = 48; i <= 57; i++)
 	{
-		_putchar(i);
+		putchar(i);
 	}
-	_putchar(10);
+	putchar(10);
+	return;
+}
+
+int main(void)
+{
+	print_numbers();
 }
