@@ -1,7 +1,7 @@
 /**
  * _isdigit - checke whether argument is a digit
  * @c: int ascii code
- * Return: int 1 if c is a digit else 
+ * Return: int 1 if c is a digit else
  */
 int _isdigit(int c)
 {
