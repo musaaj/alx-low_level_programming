@@ -6,7 +6,7 @@
 
 void print_most_numbers(void)
 {
-	int a = 48, i
+	int a = 48, i;
 
 	for (i = 0; i <= 9; i++)
 	{
@@ -14,6 +14,7 @@ void print_most_numbers(void)
 			continue;
 		a = a + i;
 		_putchar(a);
+		a = 48;
 	}
 	_putchar(10);
 }
