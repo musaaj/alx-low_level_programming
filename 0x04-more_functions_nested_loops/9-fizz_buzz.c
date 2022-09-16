@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * fizzbuzz - print fizzbuzz
+ * main - print fizzbuzz
+ * Return: 0
 */
 
-void fizzbuzz(void)
+void main(void)
 {
 	int i;
 
@@ -28,4 +29,5 @@ void fizzbuzz(void)
 		}
 		putchar(32);
 	}
+	return (0);
 }
