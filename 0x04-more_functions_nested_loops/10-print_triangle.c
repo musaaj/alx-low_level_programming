@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * print_triangle - print a triangle using #
+ * print_triangle - print a triangle using
+ * @size: int size of triangle to draw
 */
 
 void print_triangle(int size)
@@ -14,12 +15,12 @@ void print_triangle(int size)
 		size--;
 		i = j - size;
 		k = size;
-		while(k > 0)
+		while (k > 0)
 		{
 			_putchar(32);
 			k--;
 		}
-		while(i > 0)
+		while (i > 0)
 		{
 			_putchar('#');
 			i--;
