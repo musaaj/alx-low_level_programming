@@ -63,7 +63,7 @@ char *itoc(int n)
 
 void _put(char *str)
 {
-	int len = _strlen(str);
+	int len = 100;
 
 	while (len >= 0)
 	{
