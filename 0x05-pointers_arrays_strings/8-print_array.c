@@ -66,7 +66,7 @@ void _put(char *str)
 {
 	int len = _strlen(str);
 
-	while (len >= 1)
+	while (len >= 0)
 	{
 		putchar(str[len]);
 		len--;
