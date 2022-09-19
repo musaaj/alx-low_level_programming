@@ -52,7 +52,7 @@ char *itoc(int n)
  * @str: char
 */
 
-void _put(*str)
+void _put(char *str)
 {
 	int len = _strlen(str);
 
