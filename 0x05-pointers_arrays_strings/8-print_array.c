@@ -44,8 +44,8 @@ char *itoc(int n)
 	if (n < 0)
 	{
 		chr[100] = '-';
-		i++;
 		n *= -1;
+		n--;
 	}
 	while (n > 0)
 	{
