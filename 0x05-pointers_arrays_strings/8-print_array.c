@@ -11,7 +11,7 @@
 
 void print_array(int *a, int n)
 {
-	char chr[100];
+	char *chr;
 	int i = 0;
 
 	while (i < n)
