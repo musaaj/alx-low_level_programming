@@ -33,9 +33,13 @@ void print_array(int *a, int n)
 
 char *itoc(int n)
 {
-	static char chr[10];
+	static char chr[100];
 	int i = 0, j = 0;
 
+	for (i = 0; i < 100; i++)
+	{
+		char[i] = '\0';
+	}
 	i = 0;
 	if (n < 0)
 	{
