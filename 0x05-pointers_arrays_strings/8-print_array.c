@@ -18,7 +18,7 @@ void print_array(int *a, int n)
 	{
 		chr = itoc(a[i]);
 		_put(chr);
-		_putchar(44);
+		putchar(44);
 		putchar(32);
 		i++;
 	}
