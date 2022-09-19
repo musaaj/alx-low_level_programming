@@ -11,64 +11,19 @@
 
 void print_array(int *a, int n)
 {
-	char *chr;
 	int i = 0;
 
 	while (i < n)
 	{
-		chr = itoc(a[i]);
-		_put(chr);
-		putchar(44);
-		putchar(32);
+		print("%d", a[i]);
+
+		if (i < (n - 1))
+		{
+			printf(", ");
+		}
 		i++;
 	}
 	putchar(10);
 }
 
-/**
- * itoc - convert digits of integer to their ascii rep
- * @n: int
- * Return: char array
-*/
 
-char *itoc(int n)
-{
-	static char chr[100];
-	int i = 0, j = 0;
-
-	for (i = 0; i < 100; i++)
-	{
-		chr[i] = '\0';
-	}
-	i = 0;
-	if (n < 0)
-	{
-		chr[100] = '-';
-		n *= -1;
-		i++;
-	}
-	while (n > 0)
-	{
-		j = n % 10;
-		chr[i] = j + 48;
-		n /= 10;
-		i++;
-	}
-	return (chr);
-}
-
-/**
- * _put - suffles and print a string
- * @str: char
-*/
-
-void _put(char *str)
-{
-	int len = 100;
-
-	while (len >= 0)
-	{
-		putchar(str[len]);
-		len--;
-	}
-}
