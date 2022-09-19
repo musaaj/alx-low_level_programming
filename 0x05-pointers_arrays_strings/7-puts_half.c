@@ -19,7 +19,7 @@ void puts_half(char *str)
 	while (str[halve] != '\0')
 	{
 		putchar(str[halve]);
-		halve;
+		halve++;
 	}
 	putchar(10);
 }
