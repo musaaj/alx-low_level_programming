@@ -40,7 +40,7 @@ char *itoc(int n)
 	if (n < 0)
 	{
 		chr[10] = '-';
-		i++
+		i++;
 	}
 	while (n != 0)
 	{
