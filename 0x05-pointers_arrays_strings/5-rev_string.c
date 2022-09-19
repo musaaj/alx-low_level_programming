@@ -22,9 +22,5 @@ void rev_string(char *s)
 		len--;
 	}
 	
-	while (len <= i)
-	{
-		s[len] = *(str + len);
-		len++;
-	}
+	*s = &str
 }
