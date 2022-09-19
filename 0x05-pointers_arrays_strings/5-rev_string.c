@@ -10,8 +10,7 @@
 void rev_string(char *s)
 {
 	int len = _strlen(s);
-	int i = 0;
-	static char str[100];
+	static char str[1000];
 
 	len--;
 	i = len;
@@ -21,10 +20,6 @@ void rev_string(char *s)
 		str[len] = s[len];
 		len--;
 	}
-	while (len <= i)
-	{
-		s[len] = str[len];
-	       len++;	
-	}
+	s = str;
 
 }
