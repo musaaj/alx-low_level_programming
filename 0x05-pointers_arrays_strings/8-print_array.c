@@ -11,10 +11,10 @@
 
 void print_array(int *a, int n)
 {
-	char *chr;
+	char chr[100];
 	int i = 0;
 
-	while (i != n)
+	while (i < n)
 	{
 		chr = itoc(a[i]);
 		_put(chr);
@@ -43,11 +43,11 @@ char *itoc(int n)
 	i = 0;
 	if (n < 0)
 	{
-		chr[10] = '-';
+		chr[100] = '-';
 		i++;
 		n *= -1;
 	}
-	while (n != 0)
+	while (n > 0)
 	{
 		j = n % 10;
 		chr[i] = j + 48;
