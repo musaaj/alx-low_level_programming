@@ -38,13 +38,14 @@ char *itoc(int n)
 
 	for (i = 0; i < 100; i++)
 	{
-		char[i] = '\0';
+		chr[i] = '\0';
 	}
 	i = 0;
 	if (n < 0)
 	{
 		chr[10] = '-';
 		i++;
+		n *= -1;
 	}
 	while (n != 0)
 	{
