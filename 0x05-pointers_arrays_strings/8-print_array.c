@@ -36,7 +36,7 @@ char *itoc(int n)
 	static char chr[10];
 	int i = 0, j = 0;
 
-	i = 0
+	i = 0;
 	while (n != 0)
 	{
 		j = n % 10;
@@ -44,7 +44,7 @@ char *itoc(int n)
 		n /= 10;
 		i++;
 	}
-	return chr
+	return (chr);
 }
 
 /**
