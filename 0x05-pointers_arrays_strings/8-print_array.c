@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include "main.h"
+#include "2-strlen.c"
+
+
+/**
+ * print_array - print certain number of an array
+ * @a: int array
+ * @n: int number of elements of a to print
+*/
+
+void print_array(int *a, int n)
+{
+	char *chr;
+	int i = 0;
+
+	while(i != n)
+	{
+		chr = itoc(a[i]);
+		_put(chr);
+		_putchar(44);
+		putchar(32);
+		i++;
+	}
+	putchar(10);
+}
+
+/**
+ * itoc - convert digits of integer to their ascii rep
+ * @n: int
+ * Return: char array
+*/
+
+char *itoc(int n)
+{
+	static char chr[10];
+	int i = 0, j = 0;
+
+	i = 0
+	while (n != 0)
+	{
+		j = n % 10;
+		chr[i] = j + 48;
+		n /= 10;
+		i++;
+	}
+	return chr
+}
+
+/**
+ * _put - suffles and print a string
+ * @str: char
+*/
+
+void _put(*str)
+{
+	int len = _strlen(str);
+
+	len--;
+	while (len != 0)
+	{
+		putchar(str[len]);
+		len--;
+	}
+}
