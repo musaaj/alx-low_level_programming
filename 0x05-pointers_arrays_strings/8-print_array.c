@@ -14,7 +14,7 @@ void print_array(int *a, int n)
 	char *chr;
 	int i = 0;
 
-	while(i != n)
+	while (i != n)
 	{
 		chr = itoc(a[i]);
 		_put(chr);
@@ -37,6 +37,11 @@ char *itoc(int n)
 	int i = 0, j = 0;
 
 	i = 0;
+	if (n < 0)
+	{
+		chr[10] = '-';
+		i++
+	}
 	while (n != 0)
 	{
 		j = n % 10;
