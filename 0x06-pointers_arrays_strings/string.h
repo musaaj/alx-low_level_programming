@@ -1,0 +1,1 @@
+#define EOS '\0'
