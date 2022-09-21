@@ -1,5 +1,5 @@
 #include "main.h"
-#include "0x05-pointers_arrays_strings/2-strlen.c"
+#include "../0x05-pointers_arrays_strings/2-strlen.c"
 
 /**
  * _strcat - joins two strings 
@@ -10,8 +10,8 @@
 
 char *_strcat(char *s1, char *s2)
 {
-    int len1 = strlen(s1);
-    int len2 = strlen(s2);
+    int len1 = _strlen(s1);
+    int len2 = _strlen(s2);
     int nlen = len1 + len2;
     int i = 0;
 
