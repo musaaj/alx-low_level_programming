@@ -1,5 +1,5 @@
 #include "main.h"
-#include "string.c"
+#include "string.h"
 
 /**
 * leet - encode some characters
