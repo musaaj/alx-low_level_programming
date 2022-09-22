@@ -1,6 +1,6 @@
 #include "main.h"
 #include "string.h"
-#include "strnlen.c"
+#include "strlen.c"
 
 /**
 * _strcat - concate 2 string
