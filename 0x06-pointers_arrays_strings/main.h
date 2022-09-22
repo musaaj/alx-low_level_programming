@@ -6,3 +6,5 @@ int _strcmp(char *, char *);
 void reverse_array(int *, int);
 char *string_toupper(char *);
 char *cap_string(char *);
+int is_seperator(char);
+

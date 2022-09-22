@@ -23,3 +23,23 @@ char *cap_string(char *s)
 	return (s);
 }
 
+/**
+* is_seperator - check whether a given character is a
+* a word seperator character
+* @c: char
+* Return: 1 if c is a word seperator else 0
+*/
+
+int is_seperator(char c)
+{
+	char seperators[] = {10, 9, 12, 13, 32, 33,
+	34, 46, 59, 63, 40, 41, 123, 125, 44};
+	int i;
+
+	for (i = 0; i < 15; i++)
+	{
+		if (c == seperators[i])
+			return (1);
+	}
+	return (0);
+}
