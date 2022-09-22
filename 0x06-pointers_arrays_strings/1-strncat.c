@@ -1,6 +1,6 @@
 #include "main.h"
 #include "string.h"
-#include "../0x05-pointers_arrays_strings/2-strlen.c"
+#include "strlen.c"
 /**
 * _strncat - concate 2 string
 * @dest: string
