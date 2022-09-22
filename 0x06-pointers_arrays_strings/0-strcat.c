@@ -18,8 +18,6 @@ char *_strcat(char *dest, char *src)
 
 	while (src[i] != EOS)
 	{
-		if (i >= nlen)
-			break;
 		dest[len1 + i] = src[i];
 		i++;
 	}
