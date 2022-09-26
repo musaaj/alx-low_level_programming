@@ -7,15 +7,16 @@
  * Return: str
  */
 
-char* _memset(void *str, int c, unsigned int n)
+char* _memset(char *str, int c, unsigned int n)
 {
 	int i = 0;
 
 	while (n > 0)
 	{
-		*(str + 0) = (char) c;
+		*str = (char) c;
 		i++;
 		n--;
+		str++;
 	}
 	return (str);
 }
