@@ -7,13 +7,12 @@
 
 char *_strchr(char *s, char c)
 {
-	static char nil;
-
 	while (*s != '\0')
 	{
 		if (*s == c)
 			return (s);
 		s++;
 	}
-	return (&nil);
+	s++
+	return (s);
 }
