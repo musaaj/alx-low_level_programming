@@ -13,10 +13,9 @@ char *_memset(char *str, int c, unsigned int n)
 
 	while (n > 0)
 	{
-		*str = (char) c;
+		str[i] = (char) c;
 		i++;
 		n--;
-		str++;
 	}
 	return (str);
 }
