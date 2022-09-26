@@ -4,10 +4,10 @@
  * @str: char pointer
  * @c: int character value to populate
  * @n: number of element of str to populate
- * Return: void
+ * Return: str
  */
 
-void *_memset(void *str, int c, unsigned int n)
+char* _memset(void *str, int c, unsigned int n)
 {
 	int i = 0;
 
