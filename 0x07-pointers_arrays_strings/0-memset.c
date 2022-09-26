@@ -7,7 +7,7 @@
  * Return: void
  */
 
-void *_memset(void *str, int c, int n)
+void *_memset(void *str, int c, unsigned int n)
 {
 	int i = 0;
 
