@@ -7,7 +7,7 @@
  * Return: str
  */
 
-char* _memset(char *str, int c, unsigned int n)
+char *_memset(char *str, int c, unsigned int n)
 {
 	int i = 0;
 
