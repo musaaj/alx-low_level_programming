@@ -11,5 +11,4 @@ char *cap_string(char *);
 int is_seperator(char);
 char *leet(char *);
 char *replace(char *dest, char *chk, char rplc);
-
 #endif
