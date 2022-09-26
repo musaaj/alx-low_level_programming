@@ -1,7 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
-#include <stdio.h>
-#include <stdlib.h>
+#define NULL *(void) 0
 #include "0-memset.c"
 #include "1-memcpy.c"
 #include "2-strchr.c"
