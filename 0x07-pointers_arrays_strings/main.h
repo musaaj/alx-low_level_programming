@@ -1,10 +1,12 @@
 #ifndef MAIN_H
 #define MAIN_H
-#define NULL ((void) 0)
+#define NULL ((void *) 0)
 #include "0-memset.c"
 #include "1-memcpy.c"
 #include "2-strchr.c"
+#include "strlen.c"
 char *_memset(char *str, int c, unsigned int n);
 char *_memcpy(char *dest, char *src, unsigned int n);
+char strlen(char *)
 char *_strchr(char *s, char c);
 #endif
