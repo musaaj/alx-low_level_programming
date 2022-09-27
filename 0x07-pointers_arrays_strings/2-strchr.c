@@ -1,4 +1,3 @@
-#include "strlen.c"
 /**
  * _strchr - find the first occurence of a char in a string
  * @s: string to search through
