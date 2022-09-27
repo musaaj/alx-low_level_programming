@@ -9,7 +9,7 @@
 
 char *_memset(char *, int, unsigned int n);
 char *_memcpy(char *, char *, unsigned int);
-char _strchr(char *, char);
+char *_strchr(char *, char);
 unsigned int _strlen(char *);
 
 #endif
