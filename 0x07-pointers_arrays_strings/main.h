@@ -4,7 +4,6 @@
 
 #include "0-memset.c"
 #include "1-memcpy.c"
-#include "strlen.c"
 #include "2-strchr.c"
 
 char *_memset(char *, int, unsigned int);

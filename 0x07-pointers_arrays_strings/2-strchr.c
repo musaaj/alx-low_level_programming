@@ -19,3 +19,21 @@ char *_strchr(char *s, char c)
 	}
 	return (NULL);
 }
+
+/**
+ * _strlen - finds length of a given string
+ * @s: string
+ * Return: int length of s
+*/
+
+unsigned int _strlen(char *s)
+{
+	unsigned int len = 0, i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+		len++;
+	}
+	return (len);
+}
