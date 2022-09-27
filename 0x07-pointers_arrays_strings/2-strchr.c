@@ -8,8 +8,8 @@
 
 char *_strchr(char *s, char c)
 {
-	unsigned int i = 0;
-	unsigned int len = _strlen(s);
+	int i = 0;
+	int len = _strlen(s);
 
 	while (i <= len)
 	{
@@ -28,7 +28,7 @@ char *_strchr(char *s, char c)
 
 int _strlen(char *s)
 {
-	unsigned int len = 0, i = 0;
+	int len = 0, i = 0;
 
 	while (s[i] != '\0')
 	{
