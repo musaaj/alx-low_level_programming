@@ -26,7 +26,7 @@ char *_strchr(char *s, char c)
  * Return: int length of s
 */
 
-unsigned int _strlen(char *s)
+int _strlen(char *s)
 {
 	unsigned int len = 0, i = 0;
 
