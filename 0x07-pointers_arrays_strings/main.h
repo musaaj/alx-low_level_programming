@@ -2,7 +2,6 @@
 #define MAIN_H
 #define NULL ((char *) 0)
 
-#include <stdio.h>
 #include "0-memset.c"
 #include "1-memcpy.c"
 #include "strlen.c"
