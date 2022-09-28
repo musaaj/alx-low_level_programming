@@ -1,36 +1,28 @@
-/**
- * _strspn - check for length of a substr in a str
- * @s: str to check  for substr
- * @accept: substr
- * Return: unsigned int span of substr in str
-*/
+#include "main.h"
 
+/**
+ * _strspn - gets the length of a prefix substring.
+ * @s: initial segment.
+ * @accept: accepted bytes.
+ * Return: the number of accepted bytes.
+ */
 unsigned int _strspn(char *s, char *accept)
 {
-	if ((s == NULL) || (accept == NULL))
-		return (0);
+	unsigned int i, j, bool;
 
-	unsigned int i, len, j = 0;
-
-	while (s[i] != '\0')
+	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		j = 0;
-		if (s[i] == accept[j])
+		bool = 1;
+		for (j = 0; *(accept + j) != '\0'; j++)
 		{
-			while ((accept[j] != '\0') && (s[i] != '\0'))
+			if (*(s + i) == *(accept + j))
 			{
-				while ((s[i] == accept[j]) && (accept[j] != '\0'))
-				{
-					i++;
-					j++;
-				}
-				len = j;
+				bool = 0;
 				break;
 			}
-			break;
-
 		}
-		i++;
+		if (bool == 1)
+			break;
 	}
-	return (len);
+	return (i);
 }
