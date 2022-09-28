@@ -7,12 +7,9 @@
 */
 void _print(char *s, int len)
 {
-	if (len < 0)
-	{
-		_putchar(10);
-		return;
-	}
-	_print(s, len - 1);
+	len--;
+	_putchar(s[i]);
+	_print(s, len);
 }
 
 /**
