@@ -1,14 +1,17 @@
 int _sqrt_recursion(int n)
 {
+	return (_sqrt(0, n));
+
+}
+
+int _sqrt(int i, int n)
+{
 	int hv = n / 2;
 
-	if (_sqrt_recursion(n) * _sqrt_recursion(n) == n)
-	{
-		return (_sqrt_recursion(n));
-	}
-	if (_sqrt_recursion(n) >= hv)
-	{
+	if (i * i == n)
+		return (i);
+	if (i >= hv)
 		return (-1);
-	}
-	return (1 + _sqrt_recursion(n));
+	i++;
+	return (_sqrt(i, n));
 }
