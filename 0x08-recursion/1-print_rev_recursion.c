@@ -1,17 +1,18 @@
 #include "2-strlen_recursion.c"
 #include "_putchar.c"
+
 /**
  * _print - print string in rev order
  * @s: str
  * @len: int length of @s
 */
-void _print(char *s, int len)
+int _print(char *s, int len)
 {
 	if (len < 0)
-		return;
+		return (0);
 	len--;
 	_putchar(s[len]);
-	_print(s, len);
+	return (_print(s, len));
 }
 
 /**
