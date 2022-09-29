@@ -19,5 +19,5 @@ int is_prime(int i, int n)
 		return (0);
 	if (n % i == 0)
 		return (1);
-	return (is_prime(i + 1, n);
+	return (is_prime(i + 1, n));
 }
