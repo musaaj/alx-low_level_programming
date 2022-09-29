@@ -21,7 +21,7 @@ int is_prime(int i, int n)
 
 	if (n % i == 0)
 		return (1);
-	if (i > hv)
+	if (i == hv)
 		return (0);
 	return (is_prime(i + 1, n));
 }
