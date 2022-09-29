@@ -9,7 +9,7 @@ void _print_rev_recursion(char *s)
 {
 	int len = _strlen_recursion(s);
 
-	len = _print(s, len);
+	_print(s, len);
 }
 
 /**
@@ -17,12 +17,12 @@ void _print_rev_recursion(char *s)
  * @s: str
  * @len: int length of @s
 */
-int _print(char *s, int len)
+void _print(char *s, int len)
 {
 	if (len < 0)
-		return (0);
+		return;
 	_putchar(s[len]);
-	return (_print(s, len -1));
+	_print(s, len - 1);
 }
 
 
