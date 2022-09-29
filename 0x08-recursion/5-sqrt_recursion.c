@@ -6,7 +6,7 @@ int _sqrt_recursion(int n)
 	{
 		return (_sqrt_recursion(n));
 	}
-	if (_sqrt_recursion(n) == hv)
+	if (_sqrt_recursion(n) >= hv)
 	{
 		return (-1);
 	}
