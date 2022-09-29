@@ -1,3 +1,4 @@
+#include "main.h"
 #include "2-strlen_recursion.c"
 
 /**
@@ -16,10 +17,10 @@ void _print_rev_recursion(char *s)
  * @s: str
  * @len: int length of @s
 */
-_print(char *s, int len)
+int _print(char *s, int len)
 {
 	if (len < 0)
-		return;
+		return (0);
 	_putchar(s[len]);
 	len--;
 	_print(s, len);
