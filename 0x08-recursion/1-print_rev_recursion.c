@@ -22,8 +22,7 @@ int _print(char *s, int len)
 	if (len < 0)
 		return (0);
 	_putchar(s[len]);
-	len--;
-	_print(s, len);
+	return (_print(s, len -1));
 }
 
 
