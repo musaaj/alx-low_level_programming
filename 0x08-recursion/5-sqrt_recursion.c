@@ -1,3 +1,4 @@
+#include "main.h"
 int _sqrt_recursion(int n)
 {
 	return (_sqrt(0, n));
