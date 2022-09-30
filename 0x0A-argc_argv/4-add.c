@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-
+#include <stdlib.h>
 /**
  * main - print the name of the programme
  * @argc: length of cli args
@@ -34,7 +34,7 @@ int is_number(char *s)
 {
 	if (strlen(s) == 0)
 		return (0);
-	if !(isdigit(*s))
+	if (!isdigit(*s))
 		return (0);
 	if (*s == '\0')
 		return (1);
