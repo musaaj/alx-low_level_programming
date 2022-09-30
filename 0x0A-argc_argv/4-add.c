@@ -2,18 +2,19 @@
 #include <string.h>
 #include <ctype.h>
 #include <stdlib.h>
+int is_number(char *s);
+
 /**
  * main - print the name of the programme
  * @argc: length of cli args
  * @argv: list of cli args
  * Return: zero always
 */
-int is_number(char *s);
 
 int main(int argc, char **argv)
 {
 	int sum = 0, i;
-	
+
 	for (i = 1; i < argc - 1; i++)
 	{
 		if (is_number(argv[i]))
@@ -38,5 +39,5 @@ int is_number(char *s)
 		return (0);
 	if (*s == '\0')
 		return (1);
-	return is_number((s + 1));
+	return (is_number(s + 1));
 }
