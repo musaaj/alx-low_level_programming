@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 {
 	int sum = 0, i;
 
-	for (i = 1; i < argc - 1; i++)
+	for (i = 1; i < argc; i++)
 	{
 		if (is_number(argv[i]))
 		{
