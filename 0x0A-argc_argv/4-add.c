@@ -33,11 +33,13 @@ int main(int argc, char **argv)
 */
 int is_number(char *s)
 {
-	if (strlen(s) == 0)
-		return (0);
-	if (!isdigit(*s))
-		return (0);
-	if (*s == '\0')
-		return (1);
-	return (is_number(s + 1));
+	int i, len;
+
+	len = strlen(s);
+	for (i = 0; i < len; i++)
+	{
+		if (!isdigit(s[i]))
+			return (0);
+	}
+	return (1);
 }
