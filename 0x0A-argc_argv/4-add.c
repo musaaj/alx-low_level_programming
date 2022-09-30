@@ -36,6 +36,8 @@ int is_number(char *s)
 	int i, len;
 
 	len = strlen(s);
+	if (len < 1)
+		return (0);
 	for (i = 0; i < len; i++)
 	{
 		if (!isdigit(s[i]))
