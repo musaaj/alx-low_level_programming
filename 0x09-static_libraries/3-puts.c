@@ -1,3 +1,4 @@
+#include "_putchar.c"
 void _puts(char *s)
 {
 	while (*s != '\0')
@@ -5,5 +6,5 @@ void _puts(char *s)
 		_putchar(*s);
 		s++;
 	}
-	_putchar(10)
+	_putchar(10);
 }
