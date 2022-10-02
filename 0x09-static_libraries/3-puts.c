@@ -1,4 +1,9 @@
 void _puts(char *s)
 {
-	(void)s;
+	while (*s != '\0')
+	{
+		_putchar(*s);
+		s++;
+	}
+	_putchar(10)
 }
