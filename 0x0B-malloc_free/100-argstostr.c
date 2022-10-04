@@ -1,4 +1,4 @@
-#include "2-str_concat.c"
+#include "str_concat.c"
 
 /**
 * argstostr - turn program args to a str
