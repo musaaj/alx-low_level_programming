@@ -13,7 +13,7 @@ char *argstostr(int ac, char **av)
 
 	if ((ac == 0) || (av == NULL))
 		return (NULL);
-	str = str_concat("","");
+	str = str_concat("", "");
 	for (i = 0; i < ac; i++)
 	{
 		str = str_concat(str, av[i]);
