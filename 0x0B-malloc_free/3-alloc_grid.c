@@ -7,13 +7,13 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int i, j,  **_width;
-
+	int i, j,  **_width *_height;
 	(void) j;
 	(void)i;
 	if ((width <= 0) || (height <= 0))
 		return (NULL);
-	_width = malloc((sizeof(int) * width) * (sizeof(int) * height));
+	_height = malloc(sizeof(int) * height);
+	_width = malloc((sizeof(_height) * width);
 	if (_width == NULL)
 		return (NULL);
 	return (_width);
