@@ -2,14 +2,17 @@
 
 /**
  * array_range - create a range of int array
+ * @min: int
+ * @max: int
+ * Return: int array consisting of @min to @max
  */
 int *array_range(int min, int max)
 {
 	int i, *ptr;
 
-	if ( min > max)
+	if (min > max)
 		return (NULL);
-	ptr = malloc(sizeof min * (max - min));
+	ptr = malloc(sizeof(min) * (max - min));
 	if (ptr == NULL)
 		return (NULL);
 	*ptr = min;
