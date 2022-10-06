@@ -1,6 +1,10 @@
 #include <stdlib.h>
 
 /**
+ * _calloc - allocates memory and fill with each with
+ * @nmemb: size of data type to allocate
+ * @size: number of slot if @nmemb to allocate
+ * Return: address of first element of the allocated memory
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
