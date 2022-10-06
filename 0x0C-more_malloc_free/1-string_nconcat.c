@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <string.h>
 /**
  * string_nconcat - concate @s1 with @n number of chars from @s2
  * @s1: string
@@ -8,8 +10,8 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int len = strlen(s1);
-	int i, j = 0;
+	unsigned int len = strlen(s1);
+	unsigned int i, j = 0;
 	char *str;
 
 	if (s1 == NULL)
