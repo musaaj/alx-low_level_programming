@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <string.h>
 /**
  * string_nconcat - concate @s1 with @n number of chars from @s2
  * @s1: string
