@@ -11,7 +11,9 @@
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	char *tname, *towner;
-	
+
+	if (d == NULL)
+		return;
 	if (name == NULL)
 		return;
 	if (owner == NULL)
