@@ -1,6 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
-
+#include <string.h>
 /**
 * init_dog - initializes dog object
 * @d: object to be initialize
@@ -10,13 +10,24 @@
 */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
+	char *tname, *towner;
+	
 	if (name == NULL)
-		name = "";
+		return;
 	if (owner == NULL)
-		owner = "";
+		return;
+	tname = malloc(strlen(name));
+	if (tname == NULL)
+		return;
+	towner = malloc(strlen(owner));
+	if (towner == NULL)
+	{
+		free(tname);
+		return;
+	}
 	if (d == NULL)
 		return;
-	d->name = name;
+	d->name = tname;
 	d->age = age;
-	d->owner = owner;
+	d->owner = towner;
 }
