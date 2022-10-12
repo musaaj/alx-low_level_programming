@@ -1,7 +1,7 @@
 #include "function_pointers.h"
 #include <stdlib.h>
 /**
-* index_array - find first index of occurence of an integer in an
+* int_index - find first index of occurence of an integer in an
 * integer array
 * @array: int array
 * @size: number of element of @array
