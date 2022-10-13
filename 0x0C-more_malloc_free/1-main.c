@@ -5,7 +5,7 @@
 /**
  * main - check the code
  *
- * Return: Always 0.
+ :x
  */
 int main(void)
 {
