@@ -1,15 +1,12 @@
-section .data
-	msg db "Hello, Holberton",10,0
+global main
+extern puts
 
 section .text
-
-global main
 main:
-	mov rax, 1
-	mov rdi, 1
-	mov rsi, msg
-	mov rdx, 17
-	syscall
-	mov rax, 60
-	mov rdi, 0
-	syscall
+	push msg
+	call puts
+	ret
+
+msg: db "Hello, Holberton",10,0
+
+
