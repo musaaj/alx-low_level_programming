@@ -4,7 +4,7 @@
 #define NULL (char *)(0)
 #endif
 #ifndef size_t
-#include <stddef.h>
+#typedef unsigned int size_t
 #endif
 /**
  * struct list_s - singly linked list
