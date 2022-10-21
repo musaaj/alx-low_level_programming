@@ -3,10 +3,11 @@ extern puts
 
 section .text
 main:
-	push msg
+	mov rdi, msg
 	call puts
 	ret
 
-msg: db "Hello, Holberton",10,0
+section .data
+msg: db "Hello, Holberton",0
 
 
