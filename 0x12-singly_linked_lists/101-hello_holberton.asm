@@ -1,13 +1,15 @@
 global main
-extern puts
+extern printf
 
 section .text
 main:
 	mov rdi, msg
-	call puts
+	mov rdx, fmt
+	mov eax,0 
+	call printf
 	ret
 
 section .data
-msg: db "Hello, Holberton",0
-
+msg: db "Hello, Holberton",10,0
+fmt: db "%s",0
 
