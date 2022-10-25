@@ -1,6 +1,5 @@
 #include "lists.h"
 #include <stdio.h>
-#include <stddef.h>
 /**
  * print_listint - print elements of an int array
  * @h: listint object
