@@ -6,7 +6,7 @@
  * @head: address of the first element of a listint object
  * @idx: the index to put the new element
  * @n: value of the new element
- * @Return: address of the new node
+ * Return: address of the new node
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
