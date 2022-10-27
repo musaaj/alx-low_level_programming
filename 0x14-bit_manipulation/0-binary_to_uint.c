@@ -20,7 +20,7 @@ unsigned int binary_to_uint(const char *b)
 		c -= 48;
 		if (c > 1)
 			return (0);
-		sum += c * _pow(2, len - 1);
+		sum += (c * _pow(2, len - 1));
 		len--;
 		i++;
 	}
