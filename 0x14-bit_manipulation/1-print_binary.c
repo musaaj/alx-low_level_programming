@@ -6,8 +6,10 @@
  */
 void print_binary(unsigned long int n)
 {
-	char c;
-
+	char c = 48;
+	
+	if (!n)
+		write(1, &c, 1);
 	while (n)
 	{
 		c = n & 1;
