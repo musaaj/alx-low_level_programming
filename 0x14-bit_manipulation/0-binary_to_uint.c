@@ -12,7 +12,7 @@ unsigned int binary_to_uint(const char *b)
 
 	if (b == NULL)
 		return (0);
-	len = strlen(b);
+	len = _strlen(b);
 	while (len > 0)
 	{
 		c = b[i];
@@ -27,7 +27,7 @@ unsigned int binary_to_uint(const char *b)
 }
 
 /**
- * _pow_recursion - raise number to a power
+ * _pow - raise number to a power
  * @x: base
  * @y: index
  * Return: @x raised to power of @y
@@ -41,4 +41,16 @@ int _pow(int x, int y)
 	if (y == 1)
 		return (x);
 	return (x * _pow(x, y - 1));
+}
+
+/**
+ * _strlen - find the length of a given str
+ * @s: str
+ * Return: int length of @str
+*/
+int _strlen(const char *s)
+{
+	if (*s == '\0')
+		return (0);
+	return (1 + _strlen(s + 1));
 }

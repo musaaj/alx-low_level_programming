@@ -5,4 +5,5 @@
 
 unsigned int binary_to_uint(const char *b);
 int _pow(int, int);
+int _strlen(const char *);
 #endif
