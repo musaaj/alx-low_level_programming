@@ -3,7 +3,7 @@
  * get_bit - get the value of bit at an index of a number
  * @n: usigned long int
  * @index: unsigned int
- * Returm: int
+ * Return: int
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
