@@ -7,22 +7,12 @@
 void print_binary(unsigned long int n)
 {
 	char c = 48;
-	char s[32];
-	int i = 31, count = 0;
 
-	s[i] = '\0';
-	if (!n)
-		write(1, &c, 1);
-	while (n)
+	if (n > 1)
 	{
-		i--;
-		if (n & (n & 1))
-			c = 49;
-		else
-			c = 48;
-		s[i] = c;
-		n >>= 1;
-		count++;
+		print_binary(n >> 1);
 	}
-	write(1, &s[i], count);
+	c = n & 1;
+	c += 48;
+	write(1, &c, 1);
 }
