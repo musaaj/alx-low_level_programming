@@ -2,6 +2,8 @@
 #define MAIN_H
 #define NOT_READ 0
 #define NOT_WRITE 0
+#define NEGATIVE -1
+#define POSITIVE 1
 
 #include <stdlib.h>
 #include <unistd.h>
