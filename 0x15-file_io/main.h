@@ -8,4 +8,5 @@
 #include <fcntl.h>
 
 size_t read_textfile(char *filename, size_t size);
+size_t _strlen(char *str);
 #endif
