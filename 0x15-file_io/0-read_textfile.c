@@ -6,7 +6,7 @@
  * @size: number of char to read
  * Return: number of char read or 0 if it fail
  */
-size_t read_textfile(char *filename, size_t size)
+ssize_t read_textfile(char *filename, size_t size)
 {
 	int success, file_no;
 	size_t file_size;
