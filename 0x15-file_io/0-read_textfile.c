@@ -19,15 +19,29 @@ size_t read_textfile(char *filename, size_t size)
 		return (NOT_READ);
 	file_no = open(filename, O_RDONLY);
 	if (file_no < NOT_READ)
+	{
+		free(buffer);
+		close(file_no);
 		return (NOT_READ);
+	}
 	success = read(file_no, buffer, size);
 	if (success < NOT_READ)
+	{
+		free(buffer);
+		close(file_no);
 		return (NOT_READ);
+	}
 	file_size = _strlen(buffer);
 	if (file_size < size)
 		size = file_size;
 	success = write(STDIN_FILENO, buffer, size);
 	if (success < NOT_WRITE)
+	{
+		free(buffer);
+		close(file_no);
 		return (NOT_WRITE);
+	}
+	free(buffer);
+	close(file_no);
 	return (success);
 }
