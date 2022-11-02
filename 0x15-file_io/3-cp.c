@@ -115,7 +115,7 @@ int write_to_file(char *filename, char *buffer)
 	{
 		_puts("Error: can't write file ");
 		_puts(filename);
-		_puts("\n");	
+		_puts("\n");
 		exit(99);
 	}
 	size = _strlen(buffer);
@@ -124,7 +124,7 @@ int write_to_file(char *filename, char *buffer)
 	{
 		_puts("Error: can't write file ");
 		_puts(filename);
-		_puts("\n");	
+		_puts("\n");
 		exit(99);
 	}
 	success = close(file_no);
@@ -147,7 +147,7 @@ int write_to_file(char *filename, char *buffer)
 int _puts(char *buffer)
 {
 	int size, success;
-	
+
 	if (buffer == NULL)
 		return (-1);
 	size = _strlen(buffer);
