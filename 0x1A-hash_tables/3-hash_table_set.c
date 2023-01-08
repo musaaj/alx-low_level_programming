@@ -4,7 +4,7 @@
  * hash_table_set - insert or replace a key-value pair in hash table
  * @ht: hash_table_t
  * @key: string
- * @valuie: string
+ * @value: string
  * Return: 1 on success else 0
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
