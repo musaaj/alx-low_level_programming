@@ -4,7 +4,7 @@
  * hash_table_set - insert or replace a key-value pair in hash table
  * @ht: hash_table_t
  * @key: string
- * @valu: string
+ * @valuie: string
  * Return: 1 on success else 0
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
@@ -12,7 +12,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *hash_node;
 	unsigned int idx;
 
-	if(!ht || !key || !value || !strlen(key))
+	if (!ht || !key || !value || !strlen(key))
 		return (0);
 	hash_node = malloc(sizeof(hash_node_t));
 	if (!hash_node)
