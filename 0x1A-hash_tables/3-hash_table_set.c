@@ -1,5 +1,6 @@
 #include "hash_tables.h"
 #include "strdup.c"
+#include <stdio.h>
 
 /**
  * hash_table_set - insert or replace a key-value pair in hash table
@@ -18,9 +19,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node = malloc(sizeof(hash_node_t));
 	if (!hash_node)
 		return (0);
-	if ((hash_node->key = _strdup(key)) == NULL)
+	hash_node->key = _strdup(key);
+	if (!(hash_node->key))
 		return (0);
-	if ((hash_node->value = _strdup(value)) == NULL)
+	hash_node->value = _strdup(value);
+	if (!(hash_node->key))
 		return (0);
 	hash_node->next = NULL;
 	idx = key_index((const unsigned char *)key, ht->size);
