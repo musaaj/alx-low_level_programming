@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-#include "strdup.c"
 #include <stdio.h>
 #include <string.h>
 
@@ -20,10 +19,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node = malloc(sizeof(hash_node_t));
 	if (!hash_node)
 		return (0);
-	hash_node->key = _strdup(key);
+	hash_node->key = strdup(key);
 	if (!(hash_node->key))
 		return (0);
-	hash_node->value = _strdup(value);
+	hash_node->value = strdup(value);
 	if (!(hash_node->key))
 		return (0);
 	hash_node->next = NULL;

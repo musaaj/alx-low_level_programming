@@ -1,6 +1,11 @@
 #include "hash_tables.h"
-#include "strdup.c"
 
+/**
+ * hash_table_get - get a value from a hash_table_t object
+ * @ht: hash_table_t object
+ * @key: char
+ * Return: char on success else NULL
+ */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned long int idx;
@@ -17,6 +22,12 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 }
 
+/**
+ * get_node - get a node with a given key
+ * @head: head of a hash_node_t object
+ * @key: char
+ * Return: hash_node_t on success else NULL
+ */
 hash_node_t *get_node(hash_node_t **head, const char *key)
 {
 	hash_node_t *tmp;

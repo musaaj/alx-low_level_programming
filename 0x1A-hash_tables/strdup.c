@@ -1,5 +1,4 @@
-#include "string.h"
-
+#include <stdlib.h>
 /**
  * _strdup - create a duplicate of a string
  * @s: string
