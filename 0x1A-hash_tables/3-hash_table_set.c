@@ -1,6 +1,7 @@
 #include "hash_tables.h"
 #include "strdup.c"
 #include <stdio.h>
+#include <string.h>
 
 /**
  * hash_table_set - insert or replace a key-value pair in hash table
@@ -28,6 +29,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node->next = NULL;
 	idx = key_index((const unsigned char *)key, ht->size);
 	if (!(ht->array[idx]))
+	{
+		ht->array[idx] = hash_node;
+		return (1);
+	}
+	if (strcmp(key, ht->array[idx]->key) == 0)
 	{
 		ht->array[idx] = hash_node;
 		return (1);
