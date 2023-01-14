@@ -2,6 +2,7 @@
 #define HASH_TABLE_H
 
 #include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
 
 /**
@@ -42,4 +43,5 @@ hash_node_t *get_node(hash_node_t       **head, const char *key);
 char *hash_table_get(const hash_table_t *ht, const char *key);
 void hash_table_print(const hash_table_t *ht);
 char *node_list_to_string(const hash_table_t *ht, unsigned long int idx);
+size_t char_count(char *s, char c);
 #endif
