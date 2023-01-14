@@ -40,4 +40,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value);
 int hash_node_insert(hash_node_t **head, hash_node_t *hash_node);
 hash_node_t *get_node(hash_node_t       **head, const char *key);
 char *hash_table_get(const hash_table_t *ht, const char *key);
+void hash_table_print(const hash_table_t *ht);
+char *node_list_to_string(const hash_table_t *ht, unsigned long int idx);
 #endif
