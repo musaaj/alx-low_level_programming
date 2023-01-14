@@ -44,4 +44,6 @@ char *hash_table_get(const hash_table_t *ht, const char *key);
 void hash_table_print(const hash_table_t *ht);
 char *node_list_to_string(const hash_table_t *ht, unsigned long int idx);
 size_t char_count(char *s, char c);
+void hash_table_delete(hash_table_t *ht);
+void free_node(hash_node_t *head);
 #endif

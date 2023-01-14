@@ -16,6 +16,7 @@ void hash_table_print(const hash_table_t *ht)
 	if (!dtmp)
 		return;
 	size = ht->size;
+	dtmp[0] = '\0';
 	for (i = 0; i < size; i++)
 	{
 		tmp = node_list_to_string(ht, i);
@@ -40,6 +41,7 @@ void hash_table_print(const hash_table_t *ht)
 		tmp = strtok(NULL, "^");
 	}
 	printf("}\n");
+	free(dtmp);
 
 }
 
@@ -54,13 +56,13 @@ char *node_list_to_string(const hash_table_t *ht, unsigned long int idx)
 	hash_node_t *h;
 	char *tmp;
 
+	h = ht->array[idx];
+	if (!h)
+		return (NULL);
 	tmp = malloc(sizeof(char) * 2048);
 	if (!tmp)
 		return (NULL);
 	tmp[0] = '\0';
-	h = ht->array[idx];
-	if (!h)
-		return (NULL);
 	while (h)
 	{
 		strcat(tmp, "'");
