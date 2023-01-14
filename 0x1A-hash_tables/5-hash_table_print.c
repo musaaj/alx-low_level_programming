@@ -1,5 +1,9 @@
 #include "hash_tables.h"
 
+/**
+ * hash_table_print - print elements of a hash_table_t object
+ * @ht: hash_table_t object
+ */
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int size, i;
@@ -39,6 +43,12 @@ void hash_table_print(const hash_table_t *ht)
 
 }
 
+/**
+ * node_list_to_string - convert a hash_node_t object to string
+ * @ht: hash_table_t object
+ * @idx: index of a hash_node_t object to convert
+ * Return: string on success else null
+ */
 char *node_list_to_string(const hash_table_t *ht, unsigned long int idx)
 {
 	hash_node_t *h;
@@ -67,6 +77,12 @@ char *node_list_to_string(const hash_table_t *ht, unsigned long int idx)
 	return (tmp);
 }
 
+/**
+ * char_count - count occurence of a char in string
+ * @s: string
+ * @c: char
+ * Return: size_t
+ */
 size_t char_count(char *s, char c)
 {
 	size_t i, count;
