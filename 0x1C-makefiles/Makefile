@@ -1,3 +1,4 @@
-all: school
-school:
-	gcc main.c school.c -o school
+all:
+	git add .
+	git commit -m "add file"
+	git push
